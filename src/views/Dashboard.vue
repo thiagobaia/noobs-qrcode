@@ -1,9 +1,11 @@
 <template>
-  <div class="overflow-y-auto flex-wrap bg-gray-200 pt-32" v-if="produtos">
-    <div class="qrCode m-auto overflow-hidden mb-4 max-w-4xl flex bg-white" v-for="(produto, index) in produtos" :key="index">
-      <qriously class="m-4" :value="produto" :size="150" :id="index" />
-      <div class="buttonDownlod">
-        <button @click="donwloadCanvas(index, produto)">
+  <div class="overflow-y-auto bg-gray-200 pt-32" v-if="dashboards">
+    <div class="shadow-md m-auto overflow-hidden mb-4 max-w-4xl grid grid-cols-5 grid-rows-3 grid-flow-col bg-white" v-for="(qrcodee, index) in dashboards" :key="index">
+      <qriously class="m-4 row-span-3" :value="qrcodee.content" :size="150" :id="index" />
+      <span class="m-4 col-span-1 col-span-2">{{qrcodee.title}}</span>
+
+      <div class="buttonDownlods row-span-2 col-span-2">
+        <button @click="donwloadCanvas(index, qrcodee)">
           <i class="fa fa-download"></i>
         </button>
         <button>
@@ -15,41 +17,38 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
   name: "Dashboard",
   data() {
     return {
-      produtos: {
-        notebook: "Select option",
-        kjj: "kihihi"
-      }
+      dashboards: null
     };
   },
   methods: {
-    donwloadCanvas(index, produto) {
+    donwloadCanvas(index, qrcodee) {
       const canvas = document.getElementById(index);
       const qrcode = canvas.getElementsByTagName("canvas");
       const link = document.createElement("a");
-      link.download = `${produto}.png`;
+      link.download = `${qrcodee}.png`;
       link.href = qrcode[0].toDataURL();
       link.click();
-    }
+    },
+    fetchDashboards() {
+      axios.get("http://localhost:1337/dashboards").then(response =>{
+        this.dashboards = response.data
+      })
+    },
+  },
+  created() {
+    this.fetchDashboards();
   }
 };
 </script>
 
 <style scoped>
 
-.qrCode {
-  box-shadow: 0 0 2px 0 darkgray;
-}
-.buttonDownlod {
-  margin-left: 20px;
-  height: 40px;
-  position: relative;
-  top: 110px;
-}
-.buttonDownlod button {
+.buttonDownlods button {
   border: none;
   height: 40px;
   width: 40px;
@@ -58,11 +57,12 @@ export default {
   box-shadow: 0 1px 2px rgba(1, 1, 1, 0.4);
 }
 
-.buttonDownlod button:focus {
+.buttonDownlods button:focus {
   outline: 0 auto -webkit-focus-ring-color;
 }
 
-.buttonDownlod button:focus {
+.buttonDownlods button:focus {
   outline-offset: 0;
 }
+
 </style>
