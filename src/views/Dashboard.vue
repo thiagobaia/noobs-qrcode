@@ -1,17 +1,20 @@
 <template>
-  <div class="overflow-y-auto bg-gray-200 pt-32" v-if="dashboards">
-    <div class="shadow-md m-auto overflow-hidden mb-4 max-w-4xl grid grid-cols-5 grid-rows-3 grid-flow-col bg-white" v-for="(qrcodee, index) in dashboards" :key="index">
-      <qriously class="m-4 row-span-3" :value="qrcodee.content" :size="150" :id="index" />
-      <span class="m-4 col-span-1 col-span-2">{{qrcodee.title}}</span>
+  <div class="bg-gray-200 pt-32" v-if="dashboards">
+    <div class="shadow-md m-auto mb-4 bg-white bob" v-for="(qrcodee, index) in dashboards" :key="index">
+      <qriously class="m-4 row-span-3 " :value="qrcodee.content" :size="150" :id="index" />
+      <div class="flex-col mt-5">
+        <span class="m-4">{{qrcodee.title}}</span>
+        <div class="buttonDownlods mt-4">
+          <button @click="donwloadCanvas(index, qrcodee)">
+            <i class="fa fa-download"></i>
+          </button>
+          <button>
+            <i class="fa fa-pencil"></i>
+          </button>
+        </div>
 
-      <div class="buttonDownlods row-span-2 col-span-2">
-        <button @click="donwloadCanvas(index, qrcodee)">
-          <i class="fa fa-download"></i>
-        </button>
-        <button>
-          <i class="fa fa-pencil"></i>
-        </button>
       </div>
+
     </div>
   </div>
 </template>
@@ -63,6 +66,12 @@ export default {
 
 .buttonDownlods button:focus {
   outline-offset: 0;
+}
+.bob{
+  display: flex;
+  max-width: 60vw;
+
+
 }
 
 </style>
