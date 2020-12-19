@@ -1,9 +1,12 @@
 <template>
+  <div>
+  <TheHeader />
+    <router-view />
   <div class="bg-gray-200 pt-32" v-if="dashboards">
     <div class="shadow-md m-auto mb-4 bg-white bob" v-for="(qrcodee, index) in dashboards" :key="index">
-      <qriously class="m-4 row-span-3 " :value="qrcodee.content" :size="150" :id="index" />
+      <qriously class="m-4 row-span-3 " :value="qrcodee.content_qrcode" :size="150" :id="index" />
       <div class="flex-col mt-5">
-        <span class="m-4">{{qrcodee.title}}</span>
+        <span class="m-4">{{qrcodee.title_qrcode}}</span>
         <div class="buttonDownlods mt-4">
           <button @click="donwloadCanvas(index, qrcodee)">
             <i class="fa fa-download"></i>
@@ -12,16 +15,22 @@
             <i class="fa fa-pencil"></i>
           </button>
         </div>
-
       </div>
-
     </div>
+  </div>
+  <TheFooter />
   </div>
 </template>
 
 <script>
+import TheHeader from "@/components/TheHeader.vue";
+import TheFooter from "@/components/TheFooter.vue";
 import axios from "axios"
 export default {
+  components: {
+    TheHeader,
+    TheFooter
+  },
   name: "Dashboard",
   data() {
     return {
@@ -38,8 +47,9 @@ export default {
       link.click();
     },
     fetchDashboards() {
-      axios.get("http://localhost:1337/dashboards").then(response =>{
+      axios.get("https://rest-api-noobs.herokuapp.com/dashboard").then(response =>{
         this.dashboards = response.data
+        console.log(this.dashboards)
       })
     },
   },
