@@ -1,19 +1,15 @@
 # noobs-qrcode
 
-## Project setup
+Gerador de qrcode Web,  
+
+Link api: https://rest-api-noobs.herokuapp.com/
+
+## Para rodar o projeto 
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
+## Foto do app rodando 
+### rota http://localhost:8081/dashboard
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![noobsqr](https://user-images.githubusercontent.com/19520486/114581578-34176100-9c56-11eb-8b51-a606685f7837.png)
