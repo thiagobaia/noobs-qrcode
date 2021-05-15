@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed z-10 bg-blue-800">
+  <header class="fixed z-10 bg-indigo-600">
     <nav class="nav">
       <span>
         <router-link to="/Dashboard" class="logo">

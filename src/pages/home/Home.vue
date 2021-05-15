@@ -1,17 +1,13 @@
 <template>
-
-  <div class="flex text-xs font-serif">
-    <div class="text-3xl bg-blue-600">Noobs Qrcode</div>
-    <div class="mt-5">
-      <router-link to="/register" class="logo mt-4 mr-1 text-black p-2 cursor-pointer hover:bg-gray-300 rounded-b-sm">
-        <a class="font-serif ">Register </a>
+  <div class="grid grid-row-3">
+    <div class="flex row-span-1 justify-end bg-indigo-600 py-4 px-14 gap-4">
+      <router-link to="/register" class="justify-items-start">
+        <a class="py-2 px-4 text-sm font-medium text-white bg-indigo-500 rounded-md hover:bg-indigo-700" type="submit">Register</a>
       </router-link>
-      <router-link to="/login" class="mt-3 mr-20 border-2 text-black border-gray-400 border-opacity-100 rounded-full
-       py-2 px-6 cursor-pointer hover:bg-gray-300 hover:text-white ">
-        <a class="font-serif ">Login</a>
+      <router-link to="/login">
+        <a class="py-2 px-4 text-sm font-medium text-white bg-indigo-500 rounded-md hover:bg-indigo-700" type="submit">Login</a>
       </router-link>
     </div>
-
   </div>
 
 </template>

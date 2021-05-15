@@ -20,28 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f68d8895-0f1c-47bd-8da8-58a0c77fe757" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/pages/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dashboard/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/qrcodebuilder/QRCodeBuilder.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/qrcodebuilder/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/qrcodebuilder/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/Register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/register/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/generate/generate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/generate/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/Dashboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/QRCodeBuilder.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/pages/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/pages/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/qrcodebuilder/QRCodeBuilder.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/qrcodebuilder/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/generate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/qrcodebuilder/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/register/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +67,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,6 +78,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/dashboard" />
       <recent name="$PROJECT_DIR$/src/store" />
@@ -89,6 +91,38 @@
     <option name="myCommands">
       <command value="dashboards" />
     </option>
+  </component>
+  <component name="RunManager" selected="npm.serve">
+    <configuration name="tailwind.config.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/tailwind.config.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="buildTailwindcss" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="buildTailwindcss" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.buildTailwindcss" />
+        <item itemvalue="Node.js.tailwind.config.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,6 +135,7 @@
       <workItem from="1604546650696" duration="1757000" />
       <workItem from="1604843437311" duration="19801000" />
       <workItem from="1608358602937" duration="2799000" />
+      <workItem from="1621049680228" duration="8329000" />
     </task>
     <servers />
   </component>
@@ -118,39 +153,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="424" y="115" width="732" height="631" key="#Inspections" timestamp="1604547958302">
-      <screen x="0" y="0" width="1600" height="874" />
-    </state>
-    <state x="424" y="115" width="732" height="631" key="#Inspections/0.0.1600.874/1600.0.1600.900@0.0.1600.874" timestamp="1604547958302" />
-    <state x="710" y="331" width="490" height="384" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608359497224">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state x="710" y="331" width="490" height="384" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1054@0.0.1920.1054" timestamp="1608359497224" />
-    <state x="693" y="276" width="524" height="494" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608359748065">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state x="693" y="276" width="524" height="494" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1608359748065" />
-    <state width="947" height="219" key="GridCell.Tab.0.bottom" timestamp="1608358735429">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state width="947" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1608358735429" />
-    <state width="947" height="219" key="GridCell.Tab.0.center" timestamp="1608358735429">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state width="947" height="219" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1608358735429" />
-    <state width="947" height="219" key="GridCell.Tab.0.left" timestamp="1608358735428">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state width="947" height="219" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1608358735428" />
-    <state width="947" height="219" key="GridCell.Tab.0.right" timestamp="1608358735429">
-      <screen x="0" y="0" width="1920" height="1054" />
-    </state>
-    <state width="947" height="219" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1608358735429" />
-    <state x="459" y="195" width="672" height="677" key="run.anything.popup" timestamp="1604854897859">
-      <screen x="0" y="0" width="1600" height="874" />
-    </state>
-    <state x="459" y="195" width="672" height="677" key="run.anything.popup/0.0.1600.874/1600.0.1600.900@0.0.1600.874" timestamp="1604854897859" />
   </component>
 </project>
